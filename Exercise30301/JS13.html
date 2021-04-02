@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>มี2วิธี</title>
+</head>
+<body>
+    <script>
+        //checkเลขคู่ คี่โดยประกาศหลัง
+        {
+        console.log(evenOdd(15));
+        console.log(evenOdd(22));
+
+        function evenOdd(num) {
+         return (num%2 ===0 )? "Even" : "Odd"
+         }
+       }
+     
+        // expression
+      {
+            let evenOdd = function(num) {
+            return (num%2 ===0 )? "Even" : "Odd"
+        }
+        console.log(evenOdd(12));
+        console.log(evenOdd(21));
+    }
+    </script>
+</body>
+</html>

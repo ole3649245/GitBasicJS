@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch use prompt</title>
+</head>
+<body>
+    <script>
+        let x = +prompt("2+2= ?")
+switch (x) {
+    case 3 :
+        alert("Too small")
+    break
+    case 4 :
+        alert("Yess")
+    break
+    case 5 :
+        alert("Too much")
+     break
+    default :
+    alert("Noooooo")
+}
+console.log("Bye")
+// or ,can u write.
+{
+    let x = +prompt("2+2= ?")
+switch (x) {
+    case 4 :
+        alert("Yess,OK right")
+    break
+    case 3 :
+    case 5 :
+        alert("WRONG.........")
+     break
+    default :
+    alert("this basic math")
+}
+console.log("Bye")
+}
+
+    </script>
+</body>
+</html>

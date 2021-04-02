@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เช็คเลขคู่</title>
+</head>
+<body>
+    <script>
+       function isEven(num) {
+    let result
+    if (num%2 ===0) {
+        result = true
+    } else {
+        result = false
+    }
+    return result 
+    alert(isEven(47)) //show false
+}
+
+//or can you write
+{
+    function isEven(num) {
+    let result = (num%2 ===0)? true : false
+return result 
+}
+    console.log(isEven(94)) // true
+}
+
+// or
+{
+    function isEven(num) {
+ return (num%2 === 0)? true : false
+}
+ alert(isEven(5)) //false
+}
+
+    </script>
+</body>
+</html>

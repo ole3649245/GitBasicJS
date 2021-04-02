@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function showMessage(from, text) {
+    from ="*" + from +"*" //add * in variable from
+    alert(from + ': '+ text)
+}
+
+showMessage('Ann','Hello') //Ann has *  * = *Ann* //*Ann* :Hello
+// from ยังเหมือนเดิม
+    let name = "Tony"
+
+showMessage(name,'Hi !')
+
+// or dont put(from,...)
+showMessage("CC") //last alert,will run CC undefined
+
+    </script>
+</body>
+</html>

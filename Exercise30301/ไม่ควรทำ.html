@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ถ้าทำน่าจะแก้ยาก</title>
+</head>
+<body>
+    <script>
+ {
+let user = prompt("User name is :")
+function show2() {
+    console.log("Hello, "+user)
+    alert("Hello, "+user)
+}
+function show3() {
+for (let i=1;i<4;i++)
+console.log(i+" : Hello, "+user)
+}
+function changUser() {
+    user="JAVASCRIPT"
+}
+//เพราะถ้าใส่ชื่อuserจะกลายเป็นJAVA มันคือค่าGlobal variables
+}
+
+
+//ถ้าทำแบบนี้จะเปลี่ยนuserของอันที่2
+//call shadows  
+{
+let user = prompt("User name is :")
+function show2() {
+    console.log("Hello, "+user)
+    alert("Hello, "+user)
+}
+function show3() {
+for (let i=1;i<4;i++)
+console.log(i+" : Hello, "+user)
+}
+function changUser() {
+    let user
+    user="JAVA"
+    console.log("My local var :user = "+ user)
+}
+}
+
+{
+    // shadows again
+    let userName ="John";
+    function showmsg() {
+        let userName = "Bob"; //declare local variable
+        let msg="Hello "+userName; //Bob
+        alert(msg);
+    }
+    //function will made userName
+    showmsg();
+    alert(userName);//Joht,dont change,function dont use GB
+}
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Ex while loop's apply</title>
+</head>
+<body>
+    <p id="p1"></p>
+    <p id="p2"></p>
+
+    <script>
+        let txt = prompt("Enter Text1 to show")
+        document.querySelector("#p1").innerText = txt
+        //update p ทางid inner txt แต่prompt ทำงานพร้อมelementไม่ได้ prompt จะขึ้นมา2อัน ถึงจะทำงานต่อได้
+        let txt2 = prompt("Enter Text2 to show")
+        document.querySelector("#p2").innerText = txt2
+    </script>
+</body>
+</html>

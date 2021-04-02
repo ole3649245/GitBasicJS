@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function สามารถส่งผ่านพารามิเตอร์ได้(ส่งฟังชั่นไปรันอีกที่นึง)</title>
+</head>
+<body>
+    <script>
+        function ask(question,yes,no){
+            if (confirm(question)) yes()
+            else no();
+        }
+        function showOK(){
+            alert("You agree.");
+        }
+        function showCancel(){
+            alert("You canceled the execution");
+        }
+        function showOK2(){
+            console.log("Agree OK2")
+        }
+        function showCancel2(){
+            alert("Quit")
+        }
+        // usage :function showOK,showCancel are passed as arguments to ask
+        //  ลองอันล่างก่อน ask("Do you agree?",showOK,showCancel);
+        //ask("Agree!! " ,showCancel,showOK) //logic มันกลับนะ
+        ask("Do you agree?" ,showOK2,showCancel2)
+    </script>
+</body>
+</html>

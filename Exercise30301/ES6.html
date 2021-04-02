@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function showMessage(from,text = "no text given") { //no text given มาแทนคำว่า undefine 
+            alert(from +":"+ text );
+        }
+
+        showMessage("Ann"); // "Ann: no text given"
+
+        // any example
+
+        {
+            function showMessage(from, text="No Text") {
+    from ="*" +from +"*"
+    alert(from + ':'+ text)
+}
+
+showMessage("Dora")
+        }
+// or any example (No from,No text)
+{
+    function showMessage(from= "No one", text="No Text") {
+    from ="*" +from +"*"
+    alert(from + ':'+ text)
+} // *No one*,No Text
+    showMessage()
+}
+
+// this practice dont use ES6
+
+{
+    //old
+    function showMessage(from, text) {
+    text = text ||"No text"//use|| will can show text must input
+    from ="*" +from +"*"
+    alert(from + ':'+ text)
+}
+    showMessage("Lala") //"*Lala* ,No text"
+    showMessage("Lala","Mana") // *Lala,Mana
+    showMessage(" ","Hola") //* * Hola
+    //showMessage(,"Hala") //cant run
+}
+    </script>
+</body>
+</html>
