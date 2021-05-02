@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>ทั้งเลขคู่เลขคี่นะ เขียนเทียบ Nesting Levels</title>
+</head>
+<body>
+    <script>
+   {     for (let i=0; i<10; i++) { //คี่
+    if(i % 2 ===0) continue; 
+    console.log(i)
+}
+   }
+
+   //คู่
+{
+        for (let i=0; i<10;i++) {
+    if(i % 2 == 0) {
+        alert(i)
+    }       
+    }
+}
+//!== คู่
+
+{
+    for (let i=0; i<10; i++) { 
+    if(i % 2 !=0) continue; //!==ก็ได้นิ
+    console.log(i)
+}
+}
+
+    </script>
+</body>
+</html>
